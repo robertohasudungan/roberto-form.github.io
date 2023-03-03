@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/IT%20rotom/registrasi.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" type="text/css" href="./Form Registrasi online_files/style.css">
+  <style type="text/css">
+    .company{
+        color:white;
+        width: 100%;
+        height: 100px;
+        background:green;
+        text-align: center;
+        padding-top: 10%; 
+    }
+    .bgcolor{
+      background-color: yellow;
+      padding: 2%;
+    }
+    .color{
+      color: red;
+    }
+</style></head>
+  
+
+  <body>
+    <div class="logo-nav bgcolor">
+      <a href="http://127.0.0.1:5500/IT%20rotom/registrasi.html" class="color"><img src="./Form Registrasi online_files/logo-smkn4jkt.png" align="center">Registrasi perpustakaan SMKN 4 Jakarta </a>
+      
+    </div>
+    <br>
+  
+    <div class="container"> 
+
+      <form>
+        <h1 class="company">Form Registrasi Perpustakaan Online</h1>
+        <label for="nama"><p>Nama Lengkap</p></label>
+        <input type="text" placeholder="Masukkan nama lengkap" name="nama" required="">
+
+        <label for="Jenis Kelamin "><p>Jenis Kelamin</p>
+        <input type="checkbox" name="jk">Laki-Laki
+        <input type="checkbox" name="jk">Perempuan
+
+        <label for="kelas"><p>Kelas dan Jurusan</p></label>
+        <input type="text" placeholder="Contoh: X Teknik Jaringan Komputer" name="kelas" required="">
+
+        <label for=" Tempat Tanggal Lahir"><p> Tempat Tanggal Lahir</p></label>
+        <input type="text" placeholder="Masukan Tempat Lahir" required="">
+        <input type="date" name="" id="" required="">
+
+        <label for="nis"><p>NIS</p></label>
+        <input type="text" placeholder="Masukkan NIS" name="nis" required="">
+
+        <label for="telp"><p>No Telepon</p></label>
+        <input type="text" placeholder="Masukkan nomor telepon" name="telp" required="">
+    
+        <label for="email"><p>Email</p></label>
+        <input type="email" placeholder="Masukkan email" name="email" required="">
+
+        <label for="password"><p>Password</p></label>
+        <input type="password" placeholder="Masukkan password" name="password" required="">
+
+        <button type="submit" class="registerbtn">Daftar</button>
+      
+    </label></form></div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
